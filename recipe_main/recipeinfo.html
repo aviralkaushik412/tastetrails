@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Sharing platform</title>
+    <link rel="stylesheet" href="../STYLES/style2.css"> 
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <style>body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+    }
+    
+    header {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+    }
+    
+    h1 {
+        margin: 0;
+        font-size: 36px;
+    }
+    
+    /* .dish-img {
+        max-width: 100%;
+        height: auto;
+    } */
+    
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+    
+    table, th, td {
+        border: 1px solid #ddd;
+    }
+    
+    th, td {
+        padding: 10px;
+        text-align: left;
+    }
+    
+    th {
+        background-color: #333;
+        color: #fff;
+    }
+    
+    .recipe {
+        margin-top: 20px;
+        line-height: 1.6;
+    }
+    
+    footer {
+        text-align: center;
+        padding: 10px 0;
+        background-color: #333;
+        color: #fff;
+    } .btn-text {text-align: right} ;</style>
+    
+</head>
+
+<body>
+    <!--sidebar-->
+    <div class="sidebar">
+        <a href="#" class="logo">
+            <img src="../IMAGES/mainlogo.png" alt="logo">
+        </a>
+        <!--profilr photo-->
+        <div class="profile">
+            <div class="profile-img">
+                <img src="../IMAGES/recipe profile photo.jpeg" alt="profile photo">
+            </div>
+            <div class="name">
+                <h1>The Jolly Chef</h1>
+            </div>
+            <span>@Chef</span>
+        </div>
+        <!--about-->
+
+        <div class="about">
+            <div class="box">
+                <h3>1</h3>
+                <span>Posts</span>
+            </div>
+            
+            <div class="box">
+                <h3>24k</h3>
+                <span>Followers</span>
+            </div>
+            <!--Box3-->
+            <div class="box">
+                <h3>1,200</h3>
+                <span>Following</span>
+            </div>
+
+        </div>
+        <!--Menu-->
+        <div class="main">
+            <a href="../index.html" class="active">
+                <span class=""icon>
+                    <i class="ri-function-line"></i>
+                </span>
+                Feed
+            </a>
+            <a href="../coming.html">
+                <span class="icon">
+                    <i class="ri-search-line"></i>
+                </span>
+                Explore
+            </a>
+
+            <a href="../coming.html">
+                <span class="icon">
+                    <i class="ri-notification-4-line"></i>
+                </span>
+                Notification
+            </a>
+
+            <a href="../messanger.html">
+                <span class="icon">
+                    <i class="ri-mail-unread-fill"></i>
+                </span>
+                messages
+            </a>
+
+            <a href="../coming.html">
+                <span class="icon">
+                    <i class="ri-bar-chart-2-fill"></i>
+                </span>
+                Stats
+            </a>
+
+            <a href="../coming.html">
+                <span class="icon">
+                    <i class="ri-search-2-line"></i>
+                </span>
+                Settings
+            </a>
+
+            <a href="../loginpage.html">
+                <span class="icon">
+                    <i class="ri-logout-box-r-line"></i>
+                </span>
+                Logout
+            </a>
+
+            
+        </div>
+        
+    
+    </div>
+    <!--Main home-->
+    <div class="main-home">
+        <div class="header">
+            <div class="search">
+                <i class="ri-search-2-line"></i>
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="header-content">
+                <!-- <i class="ri-notification-4-fill"></i> -->
+                <a href="../main/comment.htm" style="display: flex; padding-right: 80px;"><h4>Add a comment</h4><i class="ri-mail-unread-fill" type></i></a>
+            </div>
+        </div>
+        <div class="bgr"><img src="" id="imagebg" alt="momos" class="dish-img"></div>
+        <div class="container">
+            <h2 id="logoforlist">Veg Momos</h2>
+            <br>
+            <br><HR>
+            <br>
+            <h3>INGREDIENTS</h3>
+            <table>
+                
+            </table>
+            <br>
+            <br><HR>
+            <br>
+            <h3>INSTRUCTIONS</h3>
+            <div class="recipe">
+                <!-- <pre>Step 1 Pre</pre> -->
+
+            </div>
+            <br>
+            <br><HR>
+            <br>
+            <div class="sumnut" style="width: 100%; height: auto;">
+                <h2>Summary</h2>
+                <br>
+                <div class="summary"></div>
+                <!-- Nutrients information content here -->
+            </div>
+            <br>
+            <br><HR>
+            <br>
+            <div class="sumnut" style="width: 100%; height: auto;">
+                <h3>DIETS</h3>
+                <br>
+                <div class="nutrients-column"></div>
+                <!-- Nutrients information content here -->
+            </div>
+            <br>
+            <br><HR>
+            <br>
+            <div class="nut" style="width: 100%; height: auto;">
+                <h3>NUTRIENTS</h3>
+                <br>
+                <div class="nutrients"></div>
+                <!-- Nutrients information content here -->
+            </div>
+        </div>
+    </div>
+    
+        <script src="/recipe_main/recipescript.js">
+        </script>
+</body>
+</html>        
