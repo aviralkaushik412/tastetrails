@@ -116,6 +116,7 @@
 
 
 const API = "e6e3241c66b04c35bbf65c0c57acdb94";
+// const API2 = "2e4dc4f7d3b24118b6fbcb614697a226";
 const URL = "https://api.spoonacular.com/recipes/complexSearch?";
 const URL2 = "https://api.spoonacular.com/recipes/";
 const URL3 = "https://api.spoonacular.com/recipes/";
@@ -243,24 +244,24 @@ async function fillData(cardClone, result) {
     
 
     try {
-    //     const response = await fetch(`${URL2}${result.id}/nutritionWidget.json?apiKey=${API}`);
-    //     if (response.ok) {
-    //         const data = await response.json();
-    //         const nutritionInfo = {
-    //             calories: data.nutrients[0].amount,
-    //             carbs: data.nutrients[3].amount,
-    //             fat: data.nutrients[1].amount,
-    //             protein: data.nutrients[10].amount,
-    //         };
+        const response = await fetch(`${URL2}${result.id}/information?apiKey=${API2}&includeNutrition=false`);
+        if (response.ok) {
+            const data = await response.json();
+            const nutritionInfo = {
+                calories: data.nutrients[0].amount,
+                carbs: data.nutrients[3].amount,
+                fat: data.nutrients[1].amount,
+                protein: data.nutrients[10].amount,
+            };
 
-    //         cal.textContent = nutritionInfo.calories;
-    //         carb.textContent = nutritionInfo.carbs;
-    //         fat.textContent = nutritionInfo.fat;
-    //         prot.textContent = nutritionInfo.protein;
+            cal.textContent = nutritionInfo.calories;
+            carb.textContent = nutritionInfo.carbs;
+            fat.textContent = nutritionInfo.fat;
+            prot.textContent = nutritionInfo.protein;
             
-    //     } else {
-    //         console.error('Failed to fetch nutritional information:', response.statusText);
-    //     }
+        } else {
+            console.error('Failed to fetch nutritional information:', response.statusText);
+        }
     } catch (error) {
         console.error('Error fetching nutritional information:', error);
     }
