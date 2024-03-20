@@ -1,6 +1,13 @@
-const API = "f2224d9a1fd0422b83c20333e78ce565";
-const API2 = "45118ccd96ae4956b7280a0f79a3a79d";
-const API3 = "5c85d7aff6654e90aeff54aec037f250";
+// const API = "f2224d9a1fd0422b83c20333e78ce565";
+// const API2 = "45118ccd96ae4956b7280a0f79a3a79d";
+// const API3 = "5c85d7aff6654e90aeff54aec037f250";
+const API = "894aaa254c334b47ba0fb7a98901b810"; //done new
+const API2 = "bd39c52c16ff4f66934148f2e2ccc28b"; // done new
+const API3 = "cb39df2e966d4ec9943b623c8731cf60"; // done new
+
+// 62b8f268317d4d89b84d50ee5b584cc5
+// f2224d9a1fd0422b83c20333e78ce565
+// 
 
 const URL = "https://api.spoonacular.com/recipes/"
 const urlParams = new URLSearchParams(window.location.search);

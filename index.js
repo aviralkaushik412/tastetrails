@@ -115,7 +115,8 @@
 
 
 
-const API = "e6e3241c66b04c35bbf65c0c57acdb94";
+// const API = "e6e3241c66b04c35bbf65c0c57acdb94";
+const API = "e37502711f8d442892a1ce2745452ca9";
 // const API2 = "2e4dc4f7d3b24118b6fbcb614697a226";
 const URL = "https://api.spoonacular.com/recipes/complexSearch?";
 const URL2 = "https://api.spoonacular.com/recipes/";
